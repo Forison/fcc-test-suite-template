@@ -6,30 +6,93 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
 
+    
   <body>
     <style>
-    #header{
-
+    #menu{
+            background-color: rgb(10,10,10)
+             width:100%;  
+              position:fixed; 
+                top:0;
     }
+    @media screen and (max-width: 600px) {
+  .topnav {
+    float: none;
+    width: 100%;
+  }
+}
+
+
+.flex-container {
+  display: flex;
+}
+
+#header-img{
+	border-radius: 100%;
+	position: absolute;
+	transform: translate(10px,-10px);
+}
+#movBut{
+	margin-left: 500px;
+}
+#form{
+	margin-top: 20px;
+}
+
+#secSec-img{
+	object-fit: contain;
+}
     </style>
-    <header id="header">
-        <nav id="nav-bar">
-          <a class="nav-link" href="#video"> Modifications </a>
-          <a class="nav-link" href="video"> Complectation </a>
-          <a class="nav-link" href="video"> Styling </a>
-        </nav>
-      <img src="https://car-recalls.eu/wp-content/uploads/2018/08/Mitsubishi-ASX-2016-recall-parking-brake.jpg" alt="Mitsubishi ASX 2013">
-    </header>
+   
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     
+    <header id="header" class="topnav">
+    	 <div id="menu">
+    	 	
+        <nav id="nav-bar" id="flex-container" >
+        	<span id="movBut">
+          <button class="nav-link" href="#video"> Modifications </button>
+          <button class="nav-link" href="#video"> Complectation </button>
+          <button class="nav-link" href="#video"> Styling </button>
+          </span>
+
+
+
+          
+
+          	<br>
+          	<span>
+      <img src="https://car-recalls.eu/wp-content/uploads/2018/08/Mitsubishi-ASX-2016-recall-parking-brake.jpg" alt="Mitsubishi ASX 2013" width="50px;" height="50px" id="header-img">
+       </span>
+
+        </div>
+
+        </nav>
+       
+
+
+    </header>
     
+    <section id="secSec">
+    <img src="https://car-recalls.eu/wp-content/uploads/2018/08/Mitsubishi-ASX-2016-recall-parking-brake.jpg" alt="Mitsubishi ASX 2013" width="100%px;" height="500px" id="secSec-img">
+   </section>
+
     
-    
-    <section id="video">
-      <video>
-         <source src="" type="video/mp4">
+    <section id="sect" style="background-color: red" >
+      <video id="video" height="250px;" width="100%" controls="true">
+         <source src="https://www.youtube.com/watch?v=ISdBAf-ysI0" type="video/mp4">
       </video>
     </section>
+
+
+    <form id="form" action="/https://www.freecodecamp.com/email-submit">
+    	<input type="email" name="email" id="email" placeholder="enter email">
+
+    <input name="" type="submit" id="submit">
+    	
+    </form>
+
+
     <!--
 
     Hello Camper!
